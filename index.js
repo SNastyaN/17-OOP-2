@@ -1,9 +1,14 @@
 class Worker {
-    constructor(name,surname,rate,days){
-        this.name = name;
+    constructor(name,surname,rate,days,getSalary){
+        this.na = name;
         this.surname = surname;
         this.rate=rate;
         this.days =days;
+        this.getSalary=getSalary;
+    }
+    getSalary() {
+      return rate*days;
+      
     }
 
 }
@@ -61,7 +66,7 @@ const data = [
     getInfo() {
         return {
             type: this.type,
-          brand: this.brand,
+            brand: this.brand,
         }
       }
     getPrice(){
@@ -72,6 +77,8 @@ const data = [
     }}
      
     class Car extends Transport{
-        getDoorsCount()
+        getDoorsCount(){
+          r
+        }
     }
-    class Bike extends Transport{}
+    //class Bike extends Transport{}
